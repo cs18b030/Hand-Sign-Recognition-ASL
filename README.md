@@ -4,19 +4,14 @@ Here is a demo of our work: <br>
 ![Hello World Demo](https://github.com/cs18b030/Hand-Sign-Recognition-ASL/blob/master/Hello%20World.gif)
 <br>
 **Packages Used:**<br>
--Keras  
--Tensorflow  
--OpenCV
-<br>
+- Keras
+- Tensorflow  
+- OpenCV
+<br><br>
 **About The dataset:**<br>
-Dataset link: https://drive.google.com/file/d/1zvWoFZvQIMIGhBhWD_xMLs6_99lIOn4s/view?usp=sharing    
-
-
-Pre-processing steps:
-    img = cv2.cvtColor(crop_img ,cv2.COLOR_BGR2YUV)  
-    img[:,:,0] = cv2.equalizeHist(img[:,:,0])  
-    img_hist = cv2.cvtColor(img, cv2.COLOR_YUV2BGR)  
-    denoised = cv2.bilateralFilter(img_hist, 7, 100, 100)   
-    img_canny = cv2.Canny(img_hist,100,200)  
-    img_blur_canny = cv2.Canny(denoised,100,200)   
+We first used the data by MNIST for ASL hand sign classification [link](https://www.kaggle.com/datamunge/sign-language-mnist). The images were 28x28 in grayscale. The training model performed good on the data but in real time results were not satisfactory. So we decided to generate our own [data](https://drive.google.com/file/d/1zvWoFZvQIMIGhBhWD_xMLs6_99lIOn4s/view?usp=sharing). We created ~13000 RGB-images of 100x100x3 from laptop-webcam. On these images, standard pre processing steps were applied:<br>
+- Histogram Equalisation  
+- Denoising by Bilateral Filter  
+- Edge detection by Canny filter  
+<br>    
     
