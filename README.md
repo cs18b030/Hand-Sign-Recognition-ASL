@@ -7,14 +7,12 @@ Here is a demo of our work: <br>
 - Keras
 - Tensorflow  
 - OpenCV
-<br>
 **About The dataset:**<br>
 We first used the data by MNIST for ASL hand sign classification [link](https://www.kaggle.com/datamunge/sign-language-mnist). The images were 28x28 in grayscale. The training model performed good on the data but in real time results were not satisfactory. So we decided to generate our own [data](https://drive.google.com/file/d/1zvWoFZvQIMIGhBhWD_xMLs6_99lIOn4s/view?usp=sharing). We created ~13000 RGB-images of 100x100x3 from laptop-webcam. On these images, standard pre processing steps were applied:<br>
 - Histogram Equalisation  
 - Denoising by Bilateral Filter  
 - Edge detection by Canny filter  
-Performing these pre processing steps increased the accuracy by 2-3%.
-<br>   
+Performing these pre processing steps increased the accuracy by 2-3%.  
 **Data Augmentation**<br>
 
 <br>
