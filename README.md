@@ -1,7 +1,7 @@
 # Hand-Sign-Recognition-ASL
 We applied hand sign classification for ASL and made a descent real time application for that purpose.   <br>
 Here is a demo of our work:
-![Hello World Demo](Hello World.gif)
+![Hello World Demo](https://github.com/cs18b030/Hand-Sign-Recognition-ASL/blob/master/Hello%20World.gif)
 
 
 Dataset link: https://drive.google.com/file/d/1zvWoFZvQIMIGhBhWD_xMLs6_99lIOn4s/view?usp=sharing  
