@@ -1,10 +1,16 @@
 # Hand-Sign-Recognition-ASL
 We applied hand sign classification for ASL and made a descent real time application for that purpose.   <br>
-Here is a demo of our work:
+Here is a demo of our work: <br>
 ![Hello World Demo](https://github.com/cs18b030/Hand-Sign-Recognition-ASL/blob/master/Hello%20World.gif)
+<br>
+**Packages Used:**<br>
+-Keras  
+-Tensorflow  
+-OpenCV
+<br>
+**About The dataset:**<br>
+Dataset link: https://drive.google.com/file/d/1zvWoFZvQIMIGhBhWD_xMLs6_99lIOn4s/view?usp=sharing    
 
-
-Dataset link: https://drive.google.com/file/d/1zvWoFZvQIMIGhBhWD_xMLs6_99lIOn4s/view?usp=sharing  
 
 Pre-processing steps:
     img = cv2.cvtColor(crop_img ,cv2.COLOR_BGR2YUV)  
