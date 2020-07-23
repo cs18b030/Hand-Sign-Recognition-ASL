@@ -18,12 +18,23 @@ Performing these pre processing steps increased the accuracy by 2-3%.
 
 
 **Data Augmentation**<br>
-
+The data collected by the team members was localised and in a few specific back-grounds and lightings. Thus initially the results in real-time application of the models specified above was not very encouraging, although the data augmentation when done while training the model improved the in general performance in real-time conditions
 
 **Model**<br>
+The following models were implemented :  
+- Resnet-50 : this was a standard resnet50 which was trained with input as 100x100x3
+- CNN Model 1: this model has about a million parameters and is easy to train and predictions are fast, input is 100x100x3 RGB image.
+- Multi Input pipeline : this model was implemented with two input pipelines one takes 
+100x100x3 RGBimage as input and the other takes 100x100x1 grayscale image as input.
+  
+Observations and inference made on the basis of performance of above models:  
+- Resnet50: The model has a large number of parameters (23 million). Although the large size of the pipeline does not affect the speed of real-time predictions to a noticeable extent. 
+- CNN Model 1: The model has about a million parameters i.e. the pipeline is light and predictions are fast, fit for real-time predictions. The performance of this model is similar to resnet with the improvement of speed and model size.
+- Multi-input pipeline model, this model was implemented in the hope to improve accuracy although it did not improve the performance. The model is slower than both the above models and hence not fit for real-time applications.
 
 
 
+**Real Time Implementation**<br>
 For real time, we created a fixed box, and placed our hand in the box. On pressing ‘p’, the model is prompted to generate a prediction for the given input image. The demo is in a way so that you can write a word on the screen by pressing ‘p’ again and again with different symbols. For the sole purpose of the demo, keypress = ‘e’ is used for backspace, ‘p’ is for prediction, ‘n’ for clearing the screen or ‘new’ word and spacebar for space.
 
 
