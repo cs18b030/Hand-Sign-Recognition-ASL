@@ -35,7 +35,7 @@ Observations and inference made on the basis of performance of above models:
 
 
 **Real Time Implementation**<br>
-For real time, we created a fixed box, and placed our hand in the box. On pressing ‘p’, the model is prompted to generate a prediction for the given input image. The demo is in a way so that you can write a word on the screen by pressing ‘p’ again and again with different symbols. For the sole purpose of the demo, keypress = ‘e’ is used for backspace, ‘p’ is for prediction, ‘n’ for clearing the screen or ‘new’ word and spacebar for space.
+For real time, we created a fixed box, and placed our hand in the box. On pressing ‘p’, the model is prompted to generate a prediction for the given input image. The demo is in a way so that you can write a word on the screen by pressing ‘p’ again and again with different symbols. For the sole purpose of the demo, keypress = ‘e’ is used for backspace, ‘p’ is for prediction, ‘n’ for clearing the screen or ‘new’ word and spacebar for space. Our model works with a latency of ~1 sec for consecutive inputs.
 
 
 
